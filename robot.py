@@ -1,3 +1,4 @@
-import game
+import game.main
 
-print ("Hello")
+game.main.run()
+

@@ -1,5 +1,3 @@
-# Render Text Example: 'I love pygame!'
-
 import pygame
 import random
 
@@ -25,13 +23,13 @@ def run():
         myFont = pygame.font.SysFont("None", fontsize)
         color = (random.randint(0,255), random.randint(0,255), random.randint(0,255))
         screen.fill((255,255,255))
-        screen.blit(myFont.render("I love pygame!", 0, (color)), (x,y))
+        screen.blit(myFont.render("PYGAME!", 0, (color)), (x,y))
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                mainloop = False # Be IDLE friendly!
+                mainloop = False
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
-                    mainloop = False # Be IDLE friendly!
+                    mainloop = False
         pygame.display.update()
 
-    pygame.quit() # Be IDLE friendly!
+    pygame.quit()

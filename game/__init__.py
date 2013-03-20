@@ -1,3 +1,1 @@
-import game
-
-game.run()
+__all__ = {"main"}
